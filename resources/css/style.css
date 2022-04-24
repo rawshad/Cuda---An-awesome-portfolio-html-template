@@ -10,6 +10,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -27,13 +28,13 @@ h1 {
     color: #fff;
 }
 
-.clearfix::after {
+/* .clearfix::after {
     content:"";
     display: block;
     clear: both;
     height: 0;
     visibility: hidden;
-}
+} */
 
 /* ===================== */
 /* REUSABLE COMPONENTS */
@@ -222,6 +223,7 @@ header {
     text-transform: capitalize;
     font-size: 1.6rem;
     margin: .5rem 0 0 0;
+    display: inline-block;
 }
 .team-section .box p {
     color:#3c4761;
