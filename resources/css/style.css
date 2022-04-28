@@ -296,3 +296,44 @@ svg.graphic-design circle {
 svg.ui-ux circle {
     stroke: #eb7d4b;
 }
+
+/* ===================== */
+/* PORTFOLIO SECTION */
+/* ===================== */
+.portfolio-section {
+    background: linear-gradient(rgba(255, 221, 153, 0.9),rgba(255, 221, 153, 0.9)), url(img/portfolio-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    color:#3c4761;
+}
+
+.portfolio-section h2::after {
+    color: #e5c37f;
+}
+
+.portfolio-filter {
+    margin: 4.5rem 0;
+}
+
+.portfolio-filter button {
+    background: #ebc985;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border: 0;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    color:#3c4761;
+    margin: 0 .5rem;
+    transition: .5s;
+}
+
+.portfolio-filter button:hover {
+    cursor: pointer;
+    box-shadow: inset 0 .3rem .5rem rgba(60, 71, 97, 0.5);
+}
