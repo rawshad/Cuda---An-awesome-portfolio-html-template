@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuda - An awesome single page portfolio html template</title>
+    <link rel="shortcut icon" href="resources/img/favicon.png" type="image/x-icon">
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap"
         rel="stylesheet">
@@ -33,6 +34,8 @@
                     <li><a href="#service">service</a></li>
                     <li><a href="#team">team</a></li>
                     <li><a href="#skill">skill</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#testimonial">testimonial</a></li>
                     <li><a href="#">contact</a></li>
                 </ul>
             </div>
@@ -202,27 +205,27 @@
         </div>
         <div class="row">
             <div class="portfolio-filter">
-                <button type="button">all</button>
-                <button type="button">web</button>
-                <button type="button">apps</button>
-                <button type="button">icons</button>
+                <button type="button" class="control" data-filter="all">all</button>
+                <button type="button" class="control" data-filter=".web">web</button>
+                <button type="button" class="control" data-filter=".apps">apps</button>
+                <button type="button" class="control" data-filter=".icons">icons</button>
             </div>
         </div>
-        <div class="row">
-            <div class="col span_1_of_2 box">
-                <img src="resources/img/portfolio1.png" alt="Isometric Perspective Mock-Up">
+        <div class="row container">
+            <div class="col span_1_of_2 box mix apps">
+                <img src="resources/img/portfolio1.png" alt="Isometric Perspective Mock-Up" class="portfolio-image">
                 <h4>Isometric Perspective Mock-Up</h4>
             </div>
-            <div class="col span_1_of_2 box">
-                <img src="resources/img/portfolio2.png" alt="Isometric Perspective Mock-Up">
+            <div class="col span_1_of_2 box mix apps web">
+                <img src="resources/img/portfolio2.png" alt="Isometric Perspective Mock-Up" class="portfolio-image">
                 <h4>Isometric Perspective Mock-Up</h4>
             </div>
-            <div class="col span_1_of_2 box">
-                <img src="resources/img/portfolio3.png" alt="Isometric Perspective Mock-Up">
+            <div class="col span_1_of_2 box mix icons">
+                <img src="resources/img/portfolio3.png" alt="Isometric Perspective Mock-Up" class="portfolio-image">
                 <h4>Isometric Perspective Mock-Up</h4>
             </div>
-            <div class="col span_1_of_2 box">
-                <img src="resources/img/portfolio4.png" alt="Isometric Perspective Mock-Up">
+            <div class="col span_1_of_2 box mix icons web apps">
+                <img src="resources/img/portfolio4.png" alt="Isometric Perspective Mock-Up" class="portfolio-image">
                 <h4>Isometric Perspective Mock-Up</h4>
             </div>
         </div>
@@ -231,6 +234,82 @@
         </div>
     </section>
     <!-- END PORTFOLIO SECTION -->
+    <!-- START TESTIMONIAL SECTION -->
+    <section id="testimonial" class="testimonial">
+        <div class="row">
+            <h2>WHAT POEPLE SAY ABOUT US</h2>
+            <p class="little-description">Our clients love us!</p>
+        </div>
+        <div class="row">
+            <div class="col span_1_of_2 box">
+                <div class="client-photo">
+                    <img src="resources/img/1.jpg" alt="Chanel Iman">
+                </div>
+                <div class="client-review">
+                    <p>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
+                    <h3>Chanel Iman</h3>
+                    <span class="role">CEO of pinterest</span>
+                </div>
+            </div>
+            <div class="col span_1_of_2 box">
+                <div class="client-photo">
+                    <img src="resources/img/2.jpg" alt="Chanel Iman">
+                </div>
+                <div class="client-review">
+                    <p>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
+                    <h3>Chanel Iman</h3>
+                    <span class="role">CEO of pinterest</span>
+                </div>
+            </div>
+            <div class="col span_1_of_2 box">
+                <div class="client-photo">
+                    <img src="resources/img/3.jpg" alt="Chanel Iman">
+                </div>
+                <div class="client-review">
+                    <p>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
+                    <h3>Chanel Iman</h3>
+                    <span class="role">CEO of pinterest</span>
+                </div>
+            </div>
+            <div class="col span_1_of_2 box">
+                <div class="client-photo">
+                    <img src="resources/img/4.jpg" alt="Chanel Iman">
+                </div>
+                <div class="client-review">
+                    <p>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
+                    <h3>Chanel Iman</h3>
+                    <span class="role">CEO of pinterest</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END TESTIMONIAL SECTION -->
+    <!-- START CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+        <div class="row">
+            <h2>GET IN TOUCH</h2>
+            <p class="little-description">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111 </p>
+        </div>
+        <div class="row">
+            <form action="" method="post">
+                <div class="row">
+                    <div class="col span_1_of_2">
+                        <input type="text" name="Name" id="name" placeholder="Your Name *" required>
+                    </div>
+                    <div class="col span_1_of_2">
+                        <input type="email" name="Email" id="email" placeholder="Your Email *" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <textarea name="Message" id="message" cols="30" rows="10" placeholder="Your Message *" required></textarea>
+                </div>
+                <div class="row">
+                    <input type="submit" value="SEND MESSAGE" class="btn btn-submit">
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- END CONTACT SECTION -->
 
 
     <!-- JS SCRIPTS -->
@@ -239,6 +318,7 @@
     <script src="vendors/js/respond.min.js"></script>
     <script src="vendors/js/selectivizr-min.js"></script>
     <script src="vendors/js/animated-circle.js"></script>
+    <script src="vendors/js/mixitup.min.js"></script>
     <script src="resources/js/main.js"></script>
 </body>
 

@@ -71,6 +71,7 @@ h2 {
     font-weight: 600;
     margin: 0 0 2rem 0;
     color: #fff;
+    text-align: center;
 }
 
 h2::after {
@@ -87,6 +88,12 @@ h3 {
     text-transform: uppercase;
     font-weight: 600;
     color: #fff;
+}
+h4{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 2.5rem;
 }
 
 .box {
@@ -336,4 +343,63 @@ svg.ui-ux circle {
 .portfolio-filter button:hover {
     cursor: pointer;
     box-shadow: inset 0 .3rem .5rem rgba(60, 71, 97, 0.5);
+}
+.portfolio-image {
+    width: 100%;
+    height: 30rem;
+}
+.portfolio-section .col:nth-child(3) {
+    margin-left: 0;
+}
+.portfolio-section .btn-load-more {
+    background: #17c2a4;
+    border-color: #14a58c;
+}
+.portfolio-section .mixitup-control-active {
+    background: #fff;
+}
+/* ===================== */
+/* TESTIMONIAL SECTION */
+/* ===================== */
+.testimonial {
+    background:linear-gradient(rgba(215,70,128, .9),rgba(215,70,128, .9)), url(img/testimonial-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.testimonial .little-description {
+    text-align: center;
+    color:#fff;
+}
+.testimonial .col:nth-child(3) {
+    margin-left:0;
+}
+.testimonial .col:nth-child(1),
+.testimonial .col:nth-child(2) {
+    margin-top: 4rem;
+}
+.testimonial .col:nth-child(3),
+.testimonial .col:nth-child(4) {
+    margin-top: 8rem;
+}
+.client-photo {
+    width: 10rem;
+    float: left;
+}
+.client-photo img {
+    height: 8rem;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+}
+.client-review {
+    width: 35rem;
+    float: left;
+}
+.client-review p {
+    font-size: 2.1rem;
+    font-style: italic;
+    margin: 0 0 2rem 0;
+}
+.client-review .role {
+    color: #ffdd99;
 }
